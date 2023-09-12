@@ -1,0 +1,165 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../AUTO%20USATE%20DB.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../AUTO%20USATE%20DB.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=770 style='border-collapse:
+ collapse;table-layout:fixed;width:577pt'>
+ <col width=186 style='mso-width-source:userset;mso-width-alt:6599;width:139pt'>
+ <col width=194 style='mso-width-source:userset;mso-width-alt:6883;width:145pt'>
+ <col width=261 style='mso-width-source:userset;mso-width-alt:9272;width:196pt'>
+ <col width=129 style='mso-width-source:userset;mso-width-alt:4579;width:97pt'>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 width=186 style='height:14.4pt;width:139pt'>NOME
+  COLONNA</td>
+  <td class=xl65 width=194 style='width:145pt'>TIPO DI DATO</td>
+  <td class=xl65 width=261 style='width:196pt'>ATTRIBUTI</td>
+  <td class=xl65 width=129 style='width:97pt'>INDICE</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>id</td>
+  <td>BIGINT</td>
+  <td>NOTNULL, AUTOINCREMENT, UNIQUE</td>
+  <td>PRIMARY KEY</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>marca</td>
+  <td>VARCHAR(100)</td>
+  <td>NOTNULL</td>
+  <td>INDEX</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>modello</td>
+  <td>VARCHAR(100)</td>
+  <td>NOTNULL</td>
+  <td>INDEX</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>anno di produzione</td>
+  <td>YEAR</td>
+  <td>NOTNULL</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'><span style='mso-bidi-font-family:Symbol;
+  mso-fareast-font-family:Symbol'>anno di immatricolazione</span></td>
+  <td>YEAR</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>potenza</td>
+  <td>SMALLINT</td>
+  <td>NOTNULL</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>condizioni del veicolo</td>
+  <td>TEXT</td>
+  <td>NOTNULL</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>dimensioni</td>
+  <td>VARCHAR(255)</td>
+  <td>NOTNULL</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>classificazione energetica</td>
+  <td>VARCHAR(6)</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>unico proprietario</td>
+  <td>VARCHAR(2)</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>colore</td>
+  <td>VARCHAR(50)</td>
+  <td>NOTNULL</td>
+  <td>INDEX</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>carburante</td>
+  <td>VARCHAR(25)</td>
+  <td>NOTNULL</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>numero di porte</td>
+  <td>TINYINT</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>optionals</td>
+  <td>TEXT</td>
+  <td>NOTNULL</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>località</td>
+  <td>VARCHAR(50)</td>
+  <td>DEFAULT(&quot;IT&quot;)</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'>prezzo</td>
+  <td>DECIMAL(10, 2)</td>
+  <td>NOTNULL</td>
+  <td>INDEX</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=186 style='width:139pt'></td>
+  <td width=194 style='width:145pt'></td>
+  <td width=261 style='width:196pt'></td>
+  <td width=129 style='width:97pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
